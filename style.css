@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #222;
+}
+
+/* ===== NAVBAR ===== */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    padding: 20px 0;
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+#navbar.scrolled {
+    background: #111;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #00c2ff;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    min-height: 100vh;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+}
+
+.alt {
+    background: #f5f5f5;
+}
+
+.section h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 17px;
+    color: #555;
+}
+
+/* CARDS */
+.cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
